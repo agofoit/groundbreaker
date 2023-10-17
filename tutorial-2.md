@@ -2,6 +2,7 @@
 
 We already forked our vue+vite app and cleaned it up so that we can focus on setting up our own small example.
 
+Missing in that tutorial: Install and import of CORS and dotenv to the express app.
 
 ## What is Vite?
 
@@ -11,10 +12,10 @@ Vite is a build tool and development server designed for modern web development.
 ## PART 1: More set up preparations
 
 1. If not done yet, create a `.env` file and add it to the `.gitignore`.
-2. Furthermore look for the `vite.config` file on root level. Replace its complete content by:
+2. Furthermore look for the `vite.config.js` file on root level. Replace its complete content by:
 
 ```js
-// File: ./vite.config
+// File: ./vite.config.js
 
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
