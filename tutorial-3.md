@@ -38,8 +38,8 @@ First check if your app runs without any problems: Start the server, the fronten
 1. Add the import statement of our new service function to the top of the `app.js` file.
 2. Install `body-parser` and add the import statement to the `app.js` as well.
 3. Register the new middleware to our app.
-4. Add a new endpoint to the app.js in your express app. Name the route `/api/hello`.
-5. Deconstruct the data from the `req.body` and save it to a new variable `newHelloString` (Hint: Deconstruction works like this: `const { newHelloString } =`)
+4. Add a new POST endpoint to the app.js in your express app. Name the route `/api/hello`.
+5. Deconstruct the data from the `req.body` and save it to a new variable `newHelloString` (Hint: Deconstruction works like this: `const { newHelloString } =`
 6. For debugging: Add a console log afterwards with the content of our new variable.
 7. Now call our new service function `addHelloData` and pass our new variable to it.
 8. Finally send an `ok` as a response for out new endpoint to tell the frontend that there was no error during processing the request.
