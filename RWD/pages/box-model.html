@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      #blue {
+        border: 5px solid blue;
+        width: 80%;
+        height: 80%;
+        display: flex;
+      }
+      #wrapper {
+        width: 50%;
+      }
+      #red {
+        border: 5px solid red;
+        height: calc(50% - 10px);
+      }
+      #yellow {
+        border: 5px solid yellow;
+        height: calc(50% - 10px);
+      }
+      #green {
+        border: 5px solid green;
+        width: 50%;
+        height: calc(100% - 10px);
+      }
+    </style>
+</head>
+<body>
+
+  <p>The following squares are div elements. They are ordered in the "Box Model Layout".</p>
+  <p>A html webpage consists out of many boxes.</p>
+  <p>These box dimensions are defined by relative values (%). Minimize or maximize your browser window!</p>
+
+  <div id="blue">
+    <div id="wrapper">
+      <div id="red"></div>
+      <div id="yellow"></div>
+    </div>
+    <div id="green"></div>
+  </div>
+
+  <div style="margin: 20px 0;">
+    <a href="../index.html">Back</a>
+  </div>
+
+</body>
+</html>

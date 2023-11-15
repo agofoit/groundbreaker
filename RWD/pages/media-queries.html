@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      .box-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .box {
+        border: 1px solid white;
+        width: 100px;
+        height: 100px;
+      }
+      #hint-desktop, #hint-mobile {
+        width: 200px;
+        height: 50px;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #hint-desktop {
+        border: 3px solid red;
+      }
+      #hint-mobile {
+        border: 3px solid green;
+        display: none;
+      }
+
+      @media (max-width: 390px) {
+        h1 {
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        .box-wrapper {
+          flex-direction: column;
+          gap: 8px;
+        }
+        #hint-desktop {
+          display: none;
+        }
+        #hint-mobile {
+          display: flex;
+        }
+      }
+    </style>
+</head>
+<body>
+
+  <p>Media Queries are used to style your webpage depending on the screen size or other device properties.</p>
+
+  <h1>This is a large header</h1>
+
+  <div class="box-wrapper">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <div id="hint-desktop">I only exist on desktop!</div>
+  <div id="hint-mobile">I only exist on mobile!</div>
+
+  <div style="margin: 20px 0;">
+    <a href="../index.html">Back</a>
+  </div>
+
+</body>
+</html>
